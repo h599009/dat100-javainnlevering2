@@ -67,15 +67,11 @@ class TabellerEnhetsTester {
 	
 	@Test
 	void erSortert () {
-		
 		int[] tabell = { 6, 4, 1 };
-		
 		assertTrue(Tabeller.erSortert(tabell1));
 		assertTrue(Tabeller.erSortert(tabell2));
 		assertTrue(Tabeller.erSortert(tabell3));
-		
-		assertFalse(Tabeller.erSortert(tabell));
-	}
+		assertFalse(Tabeller.erSortert(tabell));}
 	
 	@Test 
 	void testsettSammen () {
