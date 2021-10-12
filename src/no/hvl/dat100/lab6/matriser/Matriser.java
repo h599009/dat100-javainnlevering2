@@ -11,9 +11,12 @@ public class Matriser {
 	System.out.println();
 	tilStreng(tabell1);
 	System.out.println();
-	skaler(3,tabell2);
+	
 	System.out.println();
 	erLik(tabell1,tabell2);
+	
+	skrivUt(skaler(5,tabell2));
+	
 	};
 	
 	
@@ -50,12 +53,11 @@ public class Matriser {
 	// c)
 	public static int[][] skaler(int tall, int[][] matrise) {
 
-		int[][] kopitabell = new int[matrise.length][matrise.length];
-		for (int i = 0; i < matrise[i].length; i++) {
-			for (int s = 0; s < matrise[s].length; s++) {
-				System.out.print(matrise[i][s] * tall + " ");
+		int[][] kopitabell = new int[matrise.length][matrise[0].length];
+		for (int i = 0; i < matrise.length; i++) {
+			for (int s = 0; s < matrise[i].length; s++) {
+				kopitabell[i][s]= matrise[i][s] * tall;
 			}
-			System.out.print("\n");
 		}
 		return kopitabell;
 
